@@ -14,18 +14,36 @@
 
 <div class="container">
     <div class="row">
-        <h1>Hello, world!</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Validade</th>
+            </tr>
+            </thead>
+            <tbody/>
+        </table>
 
     </div>
 </div>
 
 <script src="js/lib/jquery-3.3.1.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"-->
-<!--integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"-->
-<!--crossorigin="anonymous"></script>-->
 <script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/mustache.min.js"></script>
 
 <script src="js/lib/app.js"></script>
+<script src="js/proxy/tipo-diversas.js"></script>
+<script src="js/controller/index.js"></script>
+
+
+<script id="template" type="text/template">
+    <tr>
+        <th scope='row'>{{num}}</th>
+        <td>{{nome}}</td>
+        <td>{{periodo.de}}</td>
+    </tr>
+</script>
 
 </body>
 </html>
