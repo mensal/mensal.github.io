@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/material-icons.min.css">
 
     <title>Title</title>
 </head>
@@ -20,6 +21,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Validade</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody/>
@@ -42,6 +44,10 @@
         <th scope='row'>{{num}}</th>
         <td>{{nome}}</td>
         <td>{{periodo.de}}</td>
+        <td>
+            <button type="button" class="btn btn-primary"><i class="mdi mdi-edit"/></button>
+            <button type="button" class="btn btn-danger"><i class="mdi mdi-delete-forever"/></button>
+        </td>
     </tr>
 </script>
 
