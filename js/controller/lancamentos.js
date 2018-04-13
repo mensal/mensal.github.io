@@ -41,13 +41,13 @@ function pagamentoOk(data) {
 }
 
 function renderizarTabela(elem, data) {
-    elem.append(Mustache.render($('#lancamentos-template').html(), data));
+    elem.find('tbody').append(Mustache.render($('#lancamentos-template').html(), data));
 }
 
 function total(valores) {
     var total = 0;
 
-    $(valores).find('tbody').each(function (i, v) {
+    $(valores).each(function (i, v) {
         total += v.valor;
     });
 
