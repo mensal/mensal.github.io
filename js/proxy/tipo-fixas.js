@@ -1,8 +1,8 @@
-var TipoDiversasProxy = {
+var TipoFixasProxy = {
 
-    url: App.contextPath + "/api/tipo/diversas",
+    url: App.contextPath + "/api/tipo/fixas",
 
-    todas: function (mes, ano) {
+    todas: function () {
         return $.ajax({
             type: "GET",
             url: this.url,
