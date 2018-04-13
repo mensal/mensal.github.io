@@ -1,28 +1,47 @@
 $(function () {
-
-    // TipoDiversasProxy.buscar(4, 2018).done(buscarOk)
-
-    console.log("aqui1");
-    TipoFixasProxy.todas().done(todasFixasOk)
-
+    TipoFixasProxy.todas().done(tipoFixasOk)
 });
 
-function todasFixasOk(data) {
-    console.log("aqui");
-
-    $(data).each(function (i, elem) {
-
-        elem.dia = elem.vencimento;
-        elem.descricao = elem.nome;
-        elem.valor = " ";
-
-        var renderizado = Mustache.render($('#lancamentos-template').html(), elem);
-        $("#despesas-fixas > tbody").append(renderizado)
+function tipoFixasOk(data) {
+    $(data).each(function (i, v) {
+        v.tipo = {id: v.id};
+        v.id = null;
+        v.dia = v.vencimento;
+        v.descricao = v.nome;
+        v.valor = ' ';
     });
 
-    // $.each(data, function (i, elem) {
-    //     elem.num = i + 1;
-    //     var renderizado = Mustache.render($('#template').html(), elem);
-    //     $(".table > tbody").append(renderizado)
-    // })
+    $('.table, #despesas-fixas').append(Mustache.render($('#lancamentos-template').html(), data));
+
+    PagamentoFixasProxy.todas(2018, 4).done(pagamentoFixasOk);
+}
+
+function pagamentoFixasOk(data) {
+
+    $(data).each(function (i, v) {
+        var elem = $('tr[data-tipo-id="' + v.tipo.id + '"]');
+
+        elem.find('.valor').text(total(v.valores));
+
+        console.log(v.id);
+        // elem.find('.valor').data('xpagamento-id', v.id);
+        elem.data('xpagamento-id', v.id);
+        elem.data('pagamento-id', "xxx");
+
+        console.log(elem.html())
+
+        // elem.hide()
+        // console.log(elem.text);
+
+    });
+}
+
+function total(valores) {
+    var total = 0;
+
+    $(valores).each(function (i, v) {
+        total += v.valor;
+    });
+
+    return total;
 }

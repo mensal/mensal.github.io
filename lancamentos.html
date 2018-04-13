@@ -18,62 +18,22 @@
     <div class="row">
         <div class="col">
             <h4>Fixas</h4>
-            <table id="despesas-fixas" class="table">
-                <tbody>
-                <!--
-                <tr>
-                    <td>02</td>
-                    <td>Condomínio</td>
-                    <td>350,00</td>
-                </tr>
-                <tr>
-                    <td>05</td>
-                    <td>Eletricidade</td>
-                    <td>200,00</td>
-                </tr>
-                <tr>
-                    <td>07</td>
-                    <td>Gás</td>
-                    <td>10,00</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Netflix</td>
-                    <td>28,00</td>
-                </tr>
-                </tbody>
-                -->
-            </table>
+            <table id="despesas-fixas" class="table"/>
         </div>
     </div>
-
-    <!--
-    <div class="row">
-        <div class="col">
-            <h4>Diversas</h4>
-            <table id="diversas" class="table">
-                <tbody>
-                <tr>
-                    <td>02</td>
-                    <td>Telefone</td>
-                    <td>120,00</td>
-                </tr>
-                <tr>
-                    <td>07</td>
-                    <td>Gás</td>
-                    <td>10,00</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Netflix</td>
-                    <td>28,00</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    -->
 </div>
+
+<script id="lancamentos-template" type="text/template">
+    <tbody>
+    {{#.}}
+    <tr data-pagamento-id="{{id}}" data-tipo-id="{{tipo.id}}">
+        <td>{{dia}}</td>
+        <td>{{descricao}}</td>
+        <td class="valor">{{valor}}</td>
+    </tr>
+    {{/.}}
+    </tbody>
+</script>
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>
@@ -82,25 +42,8 @@
 <script src="js/lib/app.js"></script>
 <script src="js/proxy/tipo-diversas.js"></script>
 <script src="js/proxy/tipo-fixas.js"></script>
+<script src="js/proxy/pagamento-fixas.js"></script>
 <script src="js/controller/lancamentos.js"></script>
-
-
-<script id="lancamentos-template" type="text/template">
-    <tr>
-        <td>{{dia}}</td>
-        <td>{{descricao}}</td>
-        <td>{{valor}}</td>
-    </tr>
-
-    <!--
-        <th scope='row'>{{num}}</th>
-        <td>{{nome}}</td>
-        <td>
-            <button type="button" class="btn btn-primary"><i class="mdi mdi-edit"/></button>
-            <button type="button" class="btn btn-danger"><i class="mdi mdi-delete-forever"/></button>
-        </td>
-    -->
-</script>
 
 </body>
 </html>
