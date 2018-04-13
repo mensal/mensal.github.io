@@ -47,7 +47,7 @@ function renderizarTabela(elem, data) {
 function total(valores) {
     var total = 0;
 
-    $(valores).each(function (i, v) {
+    $(valores).find('tbody').each(function (i, v) {
         total += v.valor;
     });
 

@@ -17,21 +17,36 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4>Fixas</h4>
-            <table id="fixas" class="table"></table>
+            <table id="fixas" class="table">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3"><h4>Fixas</h4></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <h4>Diversas</h4>
             <table id="diversas" class="table"/>
+            <thead>
+            <tr>
+                <th scope="col" colspan="2"><h4>Diversas</h4></th>
+                <th scope="col">
+                    <a class="btn btn-primary pull-right" href="#" role="button"><i class="mdi mdi-add"></i></a>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
             </table>
         </div>
     </div>
 </div>
 
 <script id="lancamentos-template" type="text/template">
-    <tbody>
     {{#.}}
     <tr data-pagamento-id="{{id}}" data-tipo-id="{{tipo.id}}">
         <td>{{dia}}</td>
