@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/material-icons.min.css">
 
-    <link rel="stylesheet" href="css/lancamentos.css">
+    <link rel="stylesheet" href="css/lancamento.css">
 
     <title>Mensal</title>
 </head>
@@ -17,36 +17,14 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <table id="fixas" class="table table-hover">
-                <thead>
-                <tr>
-                    <th scope="col" colspan="3">Fixas</th>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <table id="diversas" class="table table-hover"/>
-            <thead>
-            <tr>
-                <th scope="col" colspan="2">Diversas</th>
-                <th scope="col">
-                    <a class="lancamento-click btn btn-primary pull-right" href="#" role="button">
-                        <i class="mdi mdi-add"></i>
-                    </a>
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            </table>
+            <span id="teste"></span>
         </div>
     </div>
 </div>
 
 <script id="lancamentos-template" type="text/template">
     {{#.}}
-    <tr class="lancamento-click" data-pagamento-id="{{id}}" data-tipo-id="{{tipo.id}}">
+    <tr data-pagamento-id="{{id}}" data-tipo-id="{{tipo.id}}">
         <td>{{dia}}</td>
         <td>{{descricao}}</td>
         <td class="valor text-right">{{valor}}</td>
@@ -59,12 +37,11 @@
 <script src="js/lib/mustache.min.js"></script>
 <script src="js/lib/moment.min.js"></script>
 <script src="js/lib/numeral.min.js"></script>
-<script src="js/lib/numeral-pt-br.min.js"></script>
 
 <script src="js/lib/app.js"></script>
 <script src="js/proxy/tipo.js"></script>
 <script src="js/proxy/pagamento.js"></script>
-<script src="js/controller/lancamentos.js"></script>
+<script src="js/controller/pagamento.js"></script>
 
 </body>
 </html>

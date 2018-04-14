@@ -11,17 +11,13 @@ $(function () {
         var tipoId = $(this).data('tipo-id');
         var pagamentoId = $(this).data('pagamento-id');
 
-        var url = 'lancamento.html?categoria=' + categoria;
+        var url = 'pagamento.html?categoria=' + categoria;
         url += (tipoId ? '&tipo_id=' + tipoId : '');
         url += (pagamentoId ? '&pagamento_id=' + pagamentoId : '');
 
         document.location = url;
     });
 });
-
-function parametroSeNaoNulo(param, valor) {
-
-}
 
 function tipoFixasOk(data) {
     $(data).each(function (i, v) {

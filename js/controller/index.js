@@ -1,3 +1,3 @@
 $(function () {
-    document.location = "lancamentos.html";
+    document.location = "pagamentos.html";
 });
