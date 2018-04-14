@@ -4,16 +4,18 @@ $(function () {
     numeral.defaultFormat('0.00');
 
     TipoProxy.todas('fixas').done(tipoFixasOk);
-    PagamentoProxy.todas('diversas', 2018, 4).done(pagamentoOk);
+    PagamentoProxy.todas('diversas', App.getParam('ano'), App.getParam('mes')).done(pagamentoOk);
 
     $('.table').on('click', '.lancamento-click', function () {
-        var categoria = $(this).parents('.table').attr('id');
+        var grupo = $(this).parents('.table').attr('id');
         var tipoId = $(this).data('tipo-id');
         var pagamentoId = $(this).data('pagamento-id');
 
-        var url = 'pagamento.html?categoria=' + categoria;
-        url += (tipoId ? '&tipo_id=' + tipoId : '');
+        var url = 'pagamento.html?grupo=' + grupo;
+        url += '&ano=' + App.getParam('ano');
+        url += '&mes=' + App.getParam('mes');
         url += (pagamentoId ? '&pagamento_id=' + pagamentoId : '');
+        url += (tipoId ? '&tipo_id=' + tipoId : '');
 
         document.location = url;
     });
@@ -30,7 +32,7 @@ function tipoFixasOk(data) {
 
     renderizarTabela($('#fixas'), data);
 
-    PagamentoProxy.todas('fixas', 2018, 4).done(pagamentoFixasOk);
+    PagamentoProxy.todas('fixas', App.getParam('ano'), App.getParam('mes')).done(pagamentoFixasOk);
 }
 
 function pagamentoFixasOk(data) {
