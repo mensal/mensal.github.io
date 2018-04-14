@@ -1,11 +1,27 @@
 $(function () {
     moment.locale("pt-br");
-    // numeral.locale('pt-br');
+    numeral.locale('pt-br');
     numeral.defaultFormat('0.00');
 
     TipoProxy.todas('fixas').done(tipoFixasOk);
     PagamentoProxy.todas('diversas', 2018, 4).done(pagamentoOk);
+
+    $('.table').on('click', '.lancamento-click', function () {
+        var categoria = $(this).parents('.table').attr('id');
+        var tipoId = $(this).data('tipo-id');
+        var pagamentoId = $(this).data('pagamento-id');
+
+        var url = 'lancamento.html?categoria=' + categoria;
+        url += (tipoId ? '&tipo_id=' + tipoId : '');
+        url += (pagamentoId ? '&pagamento_id=' + pagamentoId : '');
+
+        document.location = url;
+    });
 });
+
+function parametroSeNaoNulo(param, valor) {
+
+}
 
 function tipoFixasOk(data) {
     $(data).each(function (i, v) {
