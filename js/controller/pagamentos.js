@@ -4,7 +4,18 @@ $(function () {
     numeral.defaultFormat('0.00');
 
     TipoProxy.todas('fixas').done(tipoFixasOk);
-    PagamentoProxy.todas('diversas', App.getParam('ano'), App.getParam('mes')).done(pagamentoOk);
+
+    var grupos = [
+        'diversas',
+        'diaristas',
+        'combustiveis'
+    ];
+
+    $(grupos).each(function (i, v) {
+        PagamentoProxy.todas(v, App.getParam('ano'), App.getParam('mes')).done(function (data) {
+            pagamentoOk(v, data);
+        });
+    });
 
     $('.table').on('click', '.lancamento-click', function () {
         var grupo = $(this).parents('.table').attr('id');
@@ -44,14 +55,14 @@ function pagamentoFixasOk(data) {
     });
 }
 
-function pagamentoOk(data) {
+function pagamentoOk(grupo, data) {
     $(data).each(function (i, v) {
         v.dia = moment(v.data).format('DD');
         v.descricao = v.tipo.nome;
         v.valor = numeral(total(v.valores)).format();
     });
 
-    renderizarTabela($('#diversas'), data);
+    renderizarTabela($('#' + grupo), data);
 }
 
 function renderizarTabela(elem, data) {

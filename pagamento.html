@@ -17,20 +17,17 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <pre id="teste"></pre>
+            <h4>Parâmetros</h4>
+            <pre id="x-params"></pre>
+
+            <h4>Dados do pagamento</h4>
+            <pre id="x-pagamento"></pre>
+
+            <h4>Combo de tipos</h4>
+            <pre id="x-tipos"></pre>
         </div>
     </div>
 </div>
-
-<script id="lancamentos-template" type="text/template">
-    {{#.}}
-    <tr data-pagamento-id="{{id}}" data-tipo-id="{{tipo.id}}">
-        <td>{{dia}}</td>
-        <td>{{descricao}}</td>
-        <td class="valor text-right">{{valor}}</td>
-    </tr>
-    {{/.}}
-</script>
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>

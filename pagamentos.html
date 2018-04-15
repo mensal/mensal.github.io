@@ -40,6 +40,34 @@
             <tbody>
             </tbody>
             </table>
+            <table id="diaristas" class="table table-hover"/>
+            <thead>
+            <tr>
+                <th scope="col" colspan="2">Diárias</th>
+                <th scope="col">
+                    <button type="button" class="lancamento-click btn btn-primary pull-right">
+                        <i class="mdi mdi-add"></i>
+                    </button>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+            <table id="combustiveis" class="table table-hover"/>
+            <thead>
+            <tr>
+                <th scope="col" colspan="2">Combustível</th>
+                <th scope="col">
+                    <button type="button" class="lancamento-click btn btn-primary pull-right">
+                        <i class="mdi mdi-add"></i>
+                    </button>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -50,6 +78,11 @@
         <td>{{dia}}</td>
         <td>{{descricao}}</td>
         <td class="valor text-right">{{valor}}</td>
+    </tr>
+    {{/.}}
+    {{^.}}
+    <tr>
+        <td colspan="3">Nenhum pagamento efetuado</td>
     </tr>
     {{/.}}
 </script>
