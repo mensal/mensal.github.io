@@ -13,18 +13,46 @@
     <title>Mensal</title>
 </head>
 <body>
-
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4>Parâmetros</h4>
-            <pre id="x-params"></pre>
+            <form>
+                <div class="form-group">
+                    <select id="tipos" class="form-control"></select>
+                </div>
 
-            <h4>Dados do pagamento</h4>
-            <pre id="x-pagamento"></pre>
+                <div class="form-group">
+                    <input id="observacao" type="text" class="form-control" placeholder="Observação"/>
+                </div>
 
-            <h4>Combo de tipos</h4>
-            <pre id="x-tipos"></pre>
+                <div class="form-group">
+                    <input id="odometro" type="number" class="form-control" placeholder="Odometro"/>
+                </div>
+
+                <div class="form-group">
+                    <input id="litros" type="number" class="form-control" placeholder="Litros"/>
+                </div>
+
+                <div class="form-group">
+                    <button id="salvar" type="submit" class="btn btn-success">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="row">
+            <div class="col">
+                <!--
+                <h4>Parâmetros</h4>
+                <pre id="x-params"></pre>
+                -->
+
+                <!--
+                <h4>Dados do pagamento</h4>
+                -->
+                <pre id="x-pagamento"></pre>
+            </div>
         </div>
     </div>
 </div>
@@ -34,10 +62,12 @@
 <script src="js/lib/mustache.min.js"></script>
 <script src="js/lib/moment.min.js"></script>
 <script src="js/lib/numeral.min.js"></script>
+<script src="js/lib/numeral-pt-br.min.js"></script>
 
 <script src="js/lib/app.js"></script>
 <script src="js/proxy/tipo.js"></script>
 <script src="js/proxy/pagamento.js"></script>
+<script src="js/controller/grupos.js"></script>
 <script src="js/controller/pagamento.js"></script>
 
 </body>

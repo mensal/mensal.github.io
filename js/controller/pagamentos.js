@@ -5,28 +5,28 @@ $(function () {
 
     TipoProxy.todas('fixas').done(tipoFixasOk);
 
-    var grupos = [
-        'diversas',
-        'diaristas',
-        'combustiveis'
-    ];
-
-    $(grupos).each(function (i, v) {
-        PagamentoProxy.todas(v, App.getParam('ano'), App.getParam('mes')).done(function (data) {
-            pagamentoOk(v, data);
-        });
-    });
+    for (var grupo in Grupos) {
+        if (Grupos[grupo].dinamico) {
+            PagamentoProxy.todas(grupo, App.getParam('ano'), App.getParam('mes')).done(function (data) {
+                pagamentoOk(this.grupo, data);
+            });
+        }
+    }
 
     $('.table').on('click', '.lancamento-click', function () {
         var grupo = $(this).parents('.table').attr('id');
         var tipoId = $(this).data('tipo-id');
         var pagamentoId = $(this).data('pagamento-id');
 
-        var url = 'pagamento.html?grupo=' + grupo;
+        var url = 'pagamento?grupo=' + grupo;
         url += '&ano=' + App.getParam('ano');
         url += '&mes=' + App.getParam('mes');
-        url += (pagamentoId ? '&pagamento_id=' + pagamentoId : '');
-        url += (tipoId ? '&tipo_id=' + tipoId : '');
+
+        if (pagamentoId) {
+            url += '&pagamento_id=' + pagamentoId;
+        } else if (grupo == 'fixas') {
+            url += (tipoId ? '&tipo_id=' + tipoId : '');
+        }
 
         document.location = url;
     });
@@ -56,6 +56,10 @@ function pagamentoFixasOk(data) {
 }
 
 function pagamentoOk(grupo, data) {
+
+    // console.log(grupo);
+    // console.log(data);
+
     $(data).each(function (i, v) {
         v.dia = moment(v.data).format('DD');
         v.descricao = v.tipo.nome;
