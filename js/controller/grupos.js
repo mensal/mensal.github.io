@@ -22,6 +22,8 @@ var Grupos = {
     combustiveis: {
         tipo: "Veículo",
         descricaoTipo: "veiculo",
+        odometro: true,
+        litros: true,
         dinamico: true
     },
 
