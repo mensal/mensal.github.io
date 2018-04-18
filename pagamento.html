@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Cleverson Sacramento"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -22,7 +23,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="data" type="date" class="form-control" placeholder="Data" />
+                    <input id="data" type="date" class="form-control"/>
                 </div>
 
                 <div class="form-group">
@@ -31,36 +32,41 @@
 
                 <div class="form-group">
                     <input id="odometro" type="number" class="form-control" placeholder="Odometro" min="0"
-                           pattern="[0-9]*"/>
+                           maxlength="7" pattern="[0-9]*"/>
                 </div>
 
                 <div class="form-group">
-                    <input id="litros" type="number" class="form-control" placeholder="Litros" min="0"
+                    <input id="litros" type="number" class="form-control" placeholder="Litros" min="0" maxlength="6"
                            pattern="[0-9]*"/>
                 </div>
 
-                <div class="form-group">
-                    <button id="salvar" type="submit" class="btn btn-success btn-lg col-6 pull-right">Salvar</button>
+                <div class="row">
+                    <div class="col-4" hidden="true">
+                        <button id="excluir" type="button" class="btn btn-danger btn-lg col-12">Excluir
+                        </button>
+                    </div>
+                    <div class="col-8">
+                        <button id="salvar" type="submit" class="btn btn-success btn-lg col-12">Salvar
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 
+    <!--
     <div class="row">
         <div class="row">
             <div class="col">
-                <!--
                 <h4>Parâmetros</h4>
                 <pre id="x-params"></pre>
-                -->
 
-                <!--
                 <h4>Dados do pagamento</h4>
-                -->
                 <pre id="x-pagamento"></pre>
             </div>
         </div>
     </div>
+    -->
 </div>
 
 <script src="js/lib/jquery.min.js"></script>
@@ -69,6 +75,7 @@
 <script src="js/lib/moment.min.js"></script>
 <script src="js/lib/numeral.min.js"></script>
 <script src="js/lib/numeral-pt-br.min.js"></script>
+<script src="js/lib/jquery.mask.min.js"></script>
 
 <script src="js/lib/app.js"></script>
 <script src="js/proxy/tipo.js"></script>
