@@ -37,6 +37,12 @@ $(function () {
         PagamentoProxy.obter(params.grupo, params.pagamentoId).done(obterPagamentoOk);
     }
 
+    $('.campo').each(function (i, v) {
+        if (!Grupos.atual().campos[v.id]) {
+            $(v).hide();
+        }
+    });
+
     $('#odometro').mask('000000', {reverse: true, selectOnFocus: true});
     $('#litros').mask('000.00', {reverse: true, selectOnFocus: true});
 
