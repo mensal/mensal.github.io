@@ -139,7 +139,7 @@ function obterUsuariosOk(data, valores) {
             });
         }
 
-        if (valor) {
+        if (valor && valor[0] && valor[0].valor) {
             v.valor = numeral(valor[0].valor).format();
         }
     });
