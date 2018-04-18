@@ -8,9 +8,7 @@ var PagamentoProxy = {
             url: this.url + grupo,
             data: JSON.stringify(data),
             contentType: "application/json",
-            headers: {
-                Authorization: App.authToken()
-            }
+            headers: {Authorization: App.authToken()}
         });
     },
 
@@ -19,9 +17,7 @@ var PagamentoProxy = {
             type: "GET",
             grupo: grupo,
             url: this.url + grupo,
-            headers: {
-                Authorization: App.authToken()
-            }
+            headers: {Authorization: App.authToken()}
         });
     },
 
@@ -29,31 +25,25 @@ var PagamentoProxy = {
         return $.ajax({
             type: "GET",
             url: this.url + grupo + '/' + id,
-            headers: {
-                Authorization: App.authToken()
-            }
+            headers: {Authorization: App.authToken()}
         });
     },
 
-    atualizar: function (grupo, id, data) {
+    atualizar: function (grupo, id, data, versao) {
         return $.ajax({
             type: "PUT",
             url: this.url + grupo + '/' + id,
             data: JSON.stringify(data),
             contentType: "application/json",
-            headers: {
-                Authorization: App.authToken()
-            }
+            headers: {Authorization: App.authToken(), "If-Unmodified-Since": versao}
         });
     },
 
-    excluir: function (grupo, id) {
+    excluir: function (grupo, id, versao) {
         return $.ajax({
             type: "DELETE",
             url: this.url + grupo + '/' + id,
-            headers: {
-                Authorization: App.authToken()
-            }
+            headers: {Authorization: App.authToken(), "If-Unmodified-Since": versao}
         });
     }
 };

@@ -13,39 +13,3 @@ var App = {
 };
 
 var params;
-
-// var grupos = {
-//
-//     fixas: {
-//         tipo: "Tipo de despesa",
-//         descricaoTipo: "nome",
-//         dinamico: false
-//     },
-//
-//     diversas: {
-//         tipo: "Tipo de despesa",
-//         descricaoTipo: "nome",
-//         observacao: true,
-//         dinamico: true
-//     },
-//
-//     diaristas: {
-//         tipo: "Diária",
-//         descricaoTipo: "valor",
-//         valor: true,
-//         dinamico: true
-//     },
-//
-//     combustiveis: {
-//         tipo: "Veículo",
-//         descricaoTipo: "veiculo",
-//         valor: true,
-//         odometro: true,
-//         litros: true,
-//         dinamico: true
-//     },
-//
-//     atual: function () {
-//         return this[App.getParam('grupo')];
-//     }
-// }

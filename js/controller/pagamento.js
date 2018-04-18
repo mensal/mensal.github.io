@@ -14,14 +14,7 @@ $(function () {
 
     if (isNovo()) {
         $('#data').val(moment().format('YYYY-MM-DD'));
-        $('#salvar').parent().removeClass('col-*').addClass('col-12');
-
-        var option = $('<option>', {
-            text: Grupos.atual().tipo,
-            selected: true,
-            disabled: true
-        });
-        $('#tipos').append(option);
+        $('#tipos').append($('<option>', {text: Grupos.atual().tipo, selected: true, disabled: true}));
 
         TipoProxy.todos(params.grupo).done(function (data) {
             obterTiposOk(data, params.tipoId);
@@ -33,46 +26,83 @@ $(function () {
 
         // $('#x-pagamento').text("Novo registro");
     } else {
+        $('#salvar').parent().removeClass('col-12').addClass('col-6');
         $('#excluir').parent().attr('hidden', false);
+
         PagamentoProxy.obter(params.grupo, params.pagamentoId).done(obterPagamentoOk);
     }
 
     $('.campo').each(function (i, v) {
-        if (!Grupos.atual().campos[v.id]) {
-            $(v).hide();
+        if (Grupos.atual().campos[v.id]) {
+            $(v).parent().attr('hidden', false);
         }
     });
 
-    $('#odometro').mask('000000', {reverse: true, selectOnFocus: true});
-    $('#litros').mask('000.00', {reverse: true, selectOnFocus: true});
+    aplicarMascaras();
 
     $('#salvar').click(salvar);
     $('#excluir').click(excluir);
 });
 
+function isNovo() {
+    return App.getParam('pagamento_id') == null;
+}
+
 function excluir(event) {
     event.preventDefault();
 
     if (confirm('O registro será apagado.')) {
-        voltar()
+        PagamentoProxy.excluir(App.getParam('grupo'), App.getParam('pagamento_id'), $('form').data('versao')).done(voltar);
     }
 }
 
 function salvar(event) {
     event.preventDefault();
+    var data = montarData();
 
-    voltar()
+    if (isNovo()) {
+        PagamentoProxy.inserir(App.getParam('grupo'), data).done(voltar);
+    } else {
+        PagamentoProxy.atualizar(App.getParam('grupo'), App.getParam('pagamento_id'), data, $('form').data('versao')).done(voltar);
+    }
+}
+
+function montarData() {
+    var data = {
+        tipo: {
+            id: $('#tipos').val()
+        },
+        data: $('#data').val(),
+        valores: []
+    };
+
+    for (var v in Grupos.atual().campos) {
+        data[v] = $('#' + v).val();
+    }
+
+    $('.valor').each(function (i, v) {
+        if ($(v).val()) {
+            var valor = {
+                valor: $(v).val(),
+                usuario: {
+                    id: $(v).data('usuario-id')
+                }
+            };
+
+            data.valores.push(valor);
+        }
+    });
+
+    return data;
 }
 
 function voltar() {
     document.location = "pagamentos?ano=" + params.ano + "&mes=" + params.mes;
 }
 
-function isNovo() {
-    return App.getParam('pagamento_id') == null;
-}
+function obterPagamentoOk(data, status, xhr) {
+    $('form').data('versao', xhr.getResponseHeader('Last-Modified'));
 
-function obterPagamentoOk(data) {
     // $('#x-pagamento').text(JSON.stringify(data, null, '\t'));
     $('#tipos').append(criarOption(data.tipo, true));
 
@@ -115,6 +145,12 @@ function obterUsuariosOk(data, valores) {
     });
 
     $('#valores').html(Mustache.render($('#valores-template').html(), data));
+    aplicarMascaras();
+}
+
+function aplicarMascaras() {
+    $('#odometro').mask('000000', {reverse: true, selectOnFocus: true});
+    $('#litros').mask('000.00', {reverse: true, selectOnFocus: true});
     $('input.valor').mask('000000.00', {reverse: true, selectOnFocus: true});
 }
 
@@ -122,7 +158,7 @@ function criarOption(tipo, selected) {
     var texto = tipo[Grupos.atual().descricaoTipo];
 
     return $('<option>', {
-        id: tipo.id,
+        value: tipo.id,
         text: isNaN(texto) ? texto : numeral(texto).format(),
         selected: selected,
         disabled: !Grupos.atual().dinamico && !selected
