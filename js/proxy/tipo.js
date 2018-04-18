@@ -2,7 +2,7 @@ var TipoProxy = {
 
     url: App.contextPath + "/api/tipo/",
 
-    todas: function (grupo) {
+    todos: function (grupo) {
         return $.ajax({
             type: "GET",
             grupo: grupo,

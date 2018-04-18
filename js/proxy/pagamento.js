@@ -14,7 +14,7 @@ var PagamentoProxy = {
         });
     },
 
-    todas: function (grupo, ano, mes) {
+    todos: function (grupo, ano, mes) {
         return $.ajax({
             type: "GET",
             grupo: grupo,

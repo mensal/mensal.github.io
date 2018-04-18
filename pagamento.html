@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/material-icons.min.css">
 
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/pagamento.css">
 
     <title>Mensal</title>
@@ -40,6 +41,8 @@
                            pattern="[0-9]*"/>
                 </div>
 
+                <div id="valores"></div>
+
                 <div class="row">
                     <div class="col-4" hidden="true">
                         <button id="excluir" type="button" class="btn btn-danger btn-lg col-12">Excluir
@@ -54,20 +57,25 @@
         </div>
     </div>
 
-    <!--
     <div class="row">
         <div class="row">
             <div class="col">
-                <h4>Parâmetros</h4>
-                <pre id="x-params"></pre>
-
-                <h4>Dados do pagamento</h4>
                 <pre id="x-pagamento"></pre>
             </div>
         </div>
     </div>
+    <!--
     -->
 </div>
+
+<script id="valores-template" type="text/template">
+    {{#.}}
+    <div class="form-group">
+        <input type="number" class="valor form-control" placeholder="{{nome}}" min="0" maxlength="10" pattern="[0-9]*"
+               value="{{valor}}" data-usuario-id="{{id}}"/>
+    </div>
+    {{/.}}
+</script>
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>
@@ -80,6 +88,7 @@
 <script src="js/lib/app.js"></script>
 <script src="js/proxy/tipo.js"></script>
 <script src="js/proxy/pagamento.js"></script>
+<script src="js/proxy/usuario.js"></script>
 <script src="js/controller/grupos.js"></script>
 <script src="js/controller/pagamento.js"></script>
 

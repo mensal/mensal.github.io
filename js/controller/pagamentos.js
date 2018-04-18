@@ -3,11 +3,11 @@ $(function () {
     numeral.locale('pt-br');
     numeral.defaultFormat('0.00');
 
-    TipoProxy.todas('fixas').done(tipoFixasOk);
+    TipoProxy.todos('fixas').done(tipoFixasOk);
 
     for (var grupo in Grupos) {
         if (Grupos[grupo].dinamico) {
-            PagamentoProxy.todas(grupo, App.getParam('ano'), App.getParam('mes')).done(function (data) {
+            PagamentoProxy.todos(grupo, App.getParam('ano'), App.getParam('mes')).done(function (data) {
                 pagamentoOk(this.grupo, data);
             });
         }
@@ -43,7 +43,7 @@ function tipoFixasOk(data) {
 
     renderizarTabela($('#fixas'), data);
 
-    PagamentoProxy.todas('fixas', App.getParam('ano'), App.getParam('mes')).done(pagamentoFixasOk);
+    PagamentoProxy.todos('fixas', App.getParam('ano'), App.getParam('mes')).done(pagamentoFixasOk);
 }
 
 function pagamentoFixasOk(data) {
@@ -56,7 +56,6 @@ function pagamentoFixasOk(data) {
 }
 
 function pagamentoOk(grupo, data) {
-
     // console.log(grupo);
     // console.log(data);
 
@@ -70,7 +69,7 @@ function pagamentoOk(grupo, data) {
 }
 
 function renderizarTabela(elem, data) {
-    elem.find('tbody').append(Mustache.render($('#lancamentos-template').html(), data));
+    elem.find('tbody').html(Mustache.render($('#lancamentos-template').html(), data));
 }
 
 function total(valores) {

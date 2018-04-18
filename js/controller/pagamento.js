@@ -1,6 +1,5 @@
 $(function () {
     moment.locale('pt-br');
-    numeral.locale('pt-br');
     numeral.defaultFormat('0.00');
 
     params = {
@@ -24,23 +23,21 @@ $(function () {
         });
         $('#tipos').append(option);
 
-        TipoProxy.todas(params.grupo).done(function (data) {
+        TipoProxy.todos(params.grupo).done(function (data) {
             obterTiposOk(data, params.tipoId);
+        });
+
+        UsuarioProxy.todos().done(function (_data) {
+            obterUsuariosOk(_data);
         });
 
         // $('#x-pagamento').text("Novo registro");
     } else {
-        console.log($('#excluir').parent().attr('hidden', false));
+        $('#excluir').parent().attr('hidden', false);
         PagamentoProxy.obter(params.grupo, params.pagamentoId).done(obterPagamentoOk);
     }
 
-    // input.mask('##0,00', {
-    //     selectOnFocus: true,
-    //     placeholder: "0",
-    //     reverse: true
-    // });
-
-    // $('#odometro').mask('000,000,000', {reverse: true, selectOnFocus: true});
+    $('#odometro').mask('000000', {reverse: true, selectOnFocus: true});
     $('#litros').mask('000.00', {reverse: true, selectOnFocus: true});
 
     $('#salvar').click(salvar);
@@ -70,8 +67,7 @@ function isNovo() {
 }
 
 function obterPagamentoOk(data) {
-    $('#x-pagamento').text(JSON.stringify(data, null, '\t'));
-
+    // $('#x-pagamento').text(JSON.stringify(data, null, '\t'));
     $('#tipos').append(criarOption(data.tipo, true));
 
     $('#data').val(data.data);
@@ -79,8 +75,12 @@ function obterPagamentoOk(data) {
     $('#odometro').val(data.odometro);
     $('#litros').val(data.litros);
 
-    TipoProxy.todas(params.grupo).done(function (_data) {
+    TipoProxy.todos(params.grupo).done(function (_data) {
         obterTiposOk(_data, data.tipo.id);
+    });
+
+    UsuarioProxy.todos().done(function (_data) {
+        obterUsuariosOk(_data, data.valores);
     });
 }
 
@@ -92,6 +92,24 @@ function obterTiposOk(data, tipoId) {
     if (!isNovo()) {
         $('#tipos').children().first().remove();
     }
+}
+
+function obterUsuariosOk(data, valores) {
+    $(data).each(function (i, v) {
+        var valor;
+        if (valores) {
+            valor = $.grep(valores, function (_v, _i) {
+                return v.id == _v.usuario.id;
+            });
+        }
+
+        if (valor) {
+            v.valor = numeral(valor[0].valor).format();
+        }
+    });
+
+    $('#valores').html(Mustache.render($('#valores-template').html(), data));
+    $('input.valor').mask('000000.00', {reverse: true, selectOnFocus: true});
 }
 
 function criarOption(tipo, selected) {
