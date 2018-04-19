@@ -1,14 +1,14 @@
 var Grupos = {
 
     fixas: {
-        tipo: "Tipo de despesa",
+        selecao: "Escolha o tipo de despesa",
         descricaoTipo: "nome",
         dinamico: false,
         campos: {}
     },
 
     diversas: {
-        tipo: "Tipo de despesa",
+        selecao: "Escolha  o tipo de despesa",
         descricaoTipo: "nome",
         dinamico: true,
         campos: {
@@ -17,14 +17,14 @@ var Grupos = {
     },
 
     diaristas: {
-        tipo: "Diária",
+        selecao: "Escolha a diária",
         descricaoTipo: "valor",
         dinamico: true,
         campos: {}
     },
 
     combustiveis: {
-        tipo: "Veículo",
+        selecao: "Escolha o veículo",
         descricaoTipo: "veiculo",
         dinamico: true,
         campos: {
@@ -34,6 +34,10 @@ var Grupos = {
     },
 
     atual: function () {
-        return this[App.getParam('grupo')];
+        var grupo = App.getParam('grupo');
+        var atual = this[grupo];
+        atual.nome = grupo;
+
+        return atual;
     }
 };

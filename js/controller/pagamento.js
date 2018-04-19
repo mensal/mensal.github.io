@@ -14,7 +14,7 @@ $(function () {
 
     if (isNovo()) {
         $('#data').val(moment().format('YYYY-MM-DD'));
-        $('#tipos').append($('<option>', {text: Grupos.atual().tipo, selected: true, disabled: true}));
+        $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
 
         TipoProxy.todos(params.grupo).done(function (data) {
             obterTiposOk(data, params.tipoId);
