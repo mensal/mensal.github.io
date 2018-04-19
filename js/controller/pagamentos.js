@@ -3,7 +3,7 @@ $(function () {
     numeral.locale('pt-br');
     numeral.defaultFormat('0.00');
 
-    TipoProxy.todos('fixas').done(tipoFixasOk);
+    TipoProxy.todos('fixas', App.getParam('ano'), App.getParam('mes')).done(tipoFixasOk);
 
     for (var grupo in Grupos) {
         if (Grupos[grupo].dinamico) {

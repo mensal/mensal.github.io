@@ -16,6 +16,10 @@ var PagamentoProxy = {
         return $.ajax({
             type: "GET",
             grupo: grupo,
+            data: {
+                ano: ano,
+                mes: mes
+            },
             url: this.url + grupo,
             headers: {Authorization: App.authToken()}
         });
