@@ -2,39 +2,62 @@ var Grupos = {
 
     fixas: {
         selecao: "Escolha o tipo de despesa",
-        descricaoTipo: "nome",
         dinamico: false,
-        campos: {}
+        campos: {},
+        tipoDescricao: function (tipo) {
+            return tipo.nome;
+        },
+        pagamentoDescricao: function (pagamento) {
+            return this.tipoDescricao(pagamento.tipo);
+        }
     },
 
     diversas: {
         selecao: "Escolha  o tipo de despesa",
-        descricaoTipo: "nome",
         dinamico: true,
         campos: {
-            observacao: true,
+            observacao: true
+        },
+        tipoDescricao: function (tipo) {
+            return tipo.nome;
+        },
+        pagamentoDescricao: function (pagamento) {
+            return this.tipoDescricao(pagamento.tipo) + (pagamento.observacao ? ' (' + pagamento.observacao + ')' : '');
         }
     },
 
     diaristas: {
         selecao: "Escolha a diária",
-        descricaoTipo: "valor",
         dinamico: true,
-        campos: {}
+        campos: {},
+        tipoDescricao: function (tipo) {
+            return numeral(tipo.valor).format().replace('.', ',');
+        },
+        pagamentoDescricao: function (pagamento) {
+            return moment(pagamento.data).format('dddd');
+        }
     },
 
     combustiveis: {
         selecao: "Escolha o veículo",
-        descricaoTipo: "veiculo",
         dinamico: true,
         campos: {
             odometro: true,
             litros: true
+        },
+        tipoDescricao: function (tipo) {
+            return tipo.veiculo;
+        },
+        pagamentoDescricao: function (pagamento) {
+            return this.tipoDescricao(pagamento.tipo);
         }
     },
 
-    atual: function () {
-        var grupo = App.getParam('grupo');
+    atual: function (grupo) {
+        if (!grupo) {
+            grupo = App.getParam('grupo');
+        }
+
         var atual = this[grupo];
         atual.nome = grupo;
 

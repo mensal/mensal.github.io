@@ -58,7 +58,7 @@ function pagamentoFixasOk(data) {
 function pagamentoOk(grupo, data) {
     $(data).each(function (i, v) {
         v.dia = moment(v.data).format('DD');
-        v.descricao = v.tipo.nome;
+        v.descricao = Grupos.atual(grupo).pagamentoDescricao(v);
         v.valor = numeral(total(v.valores)).format();
     });
 

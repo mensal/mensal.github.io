@@ -155,11 +155,9 @@ function aplicarMascaras() {
 }
 
 function criarOption(tipo, selected) {
-    var texto = tipo[Grupos.atual().descricaoTipo];
-
     return $('<option>', {
         value: tipo.id,
-        text: isNaN(texto) ? texto : numeral(texto).format(),
+        text: Grupos.atual().tipoDescricao(tipo),
         selected: selected,
         disabled: !Grupos.atual().dinamico && !selected
     });
