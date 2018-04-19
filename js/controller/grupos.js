@@ -22,7 +22,7 @@ var Grupos = {
             return tipo.nome;
         },
         pagamentoDescricao: function (pagamento) {
-            return this.tipoDescricao(pagamento.tipo) + (pagamento.observacao ? ' (' + pagamento.observacao + ')' : '');
+            return this.tipoDescricao(pagamento.tipo) + (pagamento.observacao ? ': ' + pagamento.observacao.toLowerCase() : '');
         }
     },
 

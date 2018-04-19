@@ -1,7 +1,7 @@
 $(function () {
     moment.locale("pt-br");
     numeral.locale('pt-br');
-    numeral.defaultFormat('0.00');
+    numeral.defaultFormat('0,0.00');
 
     TipoProxy.todos('fixas', App.getParam('ano'), App.getParam('mes')).done(tipoFixasOk);
 
