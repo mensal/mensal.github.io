@@ -10,10 +10,14 @@ $(function () {
         tipoId: App.getParam('tipo_id')
     };
 
+    preencherDias();
+
     // $('#x-params').text(JSON.stringify(params, null, '\t'));
 
     if (isNovo()) {
-        $('#data').val(moment().format('YYYY-MM-DD'));
+        // $('#data').val(moment().format('YYYY-MM-DD'));
+        $('#data').val(moment().format('D'));
+
         $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
 
         TipoProxy.todos(params.grupo).done(function (data) {
@@ -44,6 +48,16 @@ $(function () {
     $('#excluir').click(excluir);
 });
 
+function preencherDias(data){
+    var dias = new Date(params.ano, params.mes -1, 0).getDate();
+
+    for (var dia = dias; dia > 0; dia--) {
+        // var selecionado = (moment().format('DD') == new String(dia));
+        var texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes -1, dia)).format('dddd').toLowerCase();
+        $('#data').append(new Option(texto, dia));
+    }
+}
+
 function isNovo() {
     return App.getParam('pagamento_id') == null;
 }
@@ -72,7 +86,7 @@ function montarData() {
         tipo: {
             id: $('#tipos').val()
         },
-        data: $('#data').val(),
+        data: moment(new Date(params.ano, params.mes -1, $('#data').val())).format('YYYY-MM-DD'),
         valores: []
     };
 
@@ -106,7 +120,8 @@ function obterPagamentoOk(data, status, xhr) {
     // $('#x-pagamento').text(JSON.stringify(data, null, '\t'));
     $('#tipos').append(criarOption(data.tipo, true));
 
-    $('#data').val(data.data);
+    // $('#data').val(data.data);
+    $('#data').val(moment(data.data).format('D'));
     $('#observacao').val(data.observacao);
     $('#odometro').val(data.odometro);
     $('#litros').val(data.litros);
