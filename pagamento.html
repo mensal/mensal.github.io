@@ -39,17 +39,17 @@
                 </div>
 
                 <div class="form-group" hidden="true">
-                    <input id="observacao" type="text" class="campo form-control" placeholder="Observação"/>
+                    <input id="observacao" type="text" class="campo form-control" placeholder="Observação" aria-label="Observação"/>
                 </div>
 
                 <div class="form-group" hidden="true">
-                    <input id="odometro" type="number" class="campo form-control" placeholder="Odometro"
+                    <input id="odometro" type="number" class="campo form-control" placeholder="Odometro" aria-label="Odometro"
                            min="0" maxlength="7" pattern="[0-9]*"/>
                 </div>
 
                 <div class="form-group" hidden="true">
-                    <input id="litros" type="number" class="campo form-control" placeholder="Litros" min="0"
-                           maxlength="6" pattern="[0-9]*"/>
+                    <input id="litros" type="number" class="campo form-control" placeholder="Litros" aria-label="Litros"
+                           min="0" maxlength="6" pattern="[0-9]*"/>
                 </div>
 
                 <div id="valores"></div>
@@ -85,7 +85,7 @@
             aria-describedby="basic-addon2
             -->
 
-            <input type="number" class="valor form-control" placeholder="0,00" aria-label="0,00" min="0" maxlength="10" pattern="[0-9]*"
+            <input type="number" class="valor form-control" placeholder="Valor" aria-label="Valor" min="0" maxlength="10" pattern="[0-9]*"
                    value="{{valor}}" data-usuario-id="{{id}}"  aria-describedby="basic-{{id}}-addon2"/>
 
             <div class="input-group-append">
