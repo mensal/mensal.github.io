@@ -31,7 +31,7 @@ var Grupos = {
         dinamico: true,
         campos: {},
         tipoDescricao: function (tipo) {
-            return numeral(tipo.valor).format().replace('.', ',');
+            return 'R$ ' + numeral(tipo.valor).format().replace('.', ',');
         },
         pagamentoDescricao: function (pagamento) {
             return moment(pagamento.data).format('dddd');

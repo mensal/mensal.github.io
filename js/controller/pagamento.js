@@ -10,6 +10,8 @@ $(function () {
         tipoId: App.getParam('tipo_id')
     };
 
+    $('#titulo').html(params.ano + '/' + params.mes);
+
     preencherDias();
 
     // $('#x-params').text(JSON.stringify(params, null, '\t'));
@@ -48,12 +50,16 @@ $(function () {
     $('#excluir').click(excluir);
 });
 
-function preencherDias(data){
-    var dias = new Date(params.ano, params.mes -1, 0).getDate();
+function preencherDias(data) {
+    var dias = new Date(params.ano, params.mes - 1, 0).getDate();
 
     for (var dia = dias; dia > 0; dia--) {
-        // var selecionado = (moment().format('DD') == new String(dia));
-        var texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes -1, dia)).format('dddd').toLowerCase();
+        var texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes - 1, dia)).format('dddd').toLowerCase();
+
+        if (dia == new Date().getDate()) {
+            texto += ' (hoje)';
+        }
+
         $('#data').append(new Option(texto, dia));
     }
 }
@@ -86,7 +92,7 @@ function montarData() {
         tipo: {
             id: $('#tipos').val()
         },
-        data: moment(new Date(params.ano, params.mes -1, $('#data').val())).format('YYYY-MM-DD'),
+        data: moment(new Date(params.ano, params.mes - 1, $('#data').val())).format('YYYY-MM-DD'),
         valores: []
     };
 
@@ -137,10 +143,10 @@ function obterPagamentoOk(data, status, xhr) {
 
 function obterTiposOk(data, tipoId) {
     $(data).each(function (i, v) {
-        $('#tipos').append(criarOption(v, tipoId == v.id));
+        $('#tipos').append(criarOption(v, tipoId == v.id || data.length == 1));
     });
 
-    if (!isNovo()) {
+    if (!isNovo() || data.length == 1) {
         $('#tipos').children().first().remove();
     }
 }

@@ -3,11 +3,18 @@ $(function () {
     numeral.locale('pt-br');
     numeral.defaultFormat('0,0.00');
 
-    TipoProxy.todos('fixas', App.getParam('ano'), App.getParam('mes')).done(tipoFixasOk);
+    params = {
+        ano: App.getParam('ano'),
+        mes: App.getParam('mes')
+    };
+
+    $('#titulo').html(params.ano + '/' + params.mes);
+
+    TipoProxy.todos('fixas', params.ano, params.mes).done(tipoFixasOk);
 
     for (var grupo in Grupos) {
         if (Grupos[grupo].dinamico) {
-            PagamentoProxy.todos(grupo, App.getParam('ano'), App.getParam('mes')).done(function (data) {
+            PagamentoProxy.todos(grupo, params.ano, params.mes).done(function (data) {
                 pagamentoOk(this.grupo, data);
             });
         }
@@ -19,8 +26,8 @@ $(function () {
         var pagamentoId = $(this).data('pagamento-id');
 
         var url = 'pagamento?grupo=' + grupo;
-        url += '&ano=' + App.getParam('ano');
-        url += '&mes=' + App.getParam('mes');
+        url += '&ano=' + params.ano;
+        url += '&mes=' + params.mes;
 
         if (pagamentoId) {
             url += '&pagamento_id=' + pagamentoId;
@@ -43,7 +50,7 @@ function tipoFixasOk(data) {
 
     renderizarTabela($('#fixas'), data);
 
-    PagamentoProxy.todos('fixas', App.getParam('ano'), App.getParam('mes')).done(pagamentoFixasOk);
+    PagamentoProxy.todos('fixas', params.ano, params.mes).done(pagamentoFixasOk);
 }
 
 function pagamentoFixasOk(data) {
