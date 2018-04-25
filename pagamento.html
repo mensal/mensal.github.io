@@ -28,22 +28,18 @@
                     <select id="tipos" class="form-control"></select>
                 </div>
 
-                <!--
-                <div class="form-group">
-                    <input id="data" type="date" class="form-control"/>
-                </div>
-                -->
-
                 <div class="form-group">
                     <select id="data" class="form-control"></select>
                 </div>
 
                 <div class="form-group" hidden="true">
-                    <input id="observacao" type="text" class="campo form-control" placeholder="Observação" aria-label="Observação"/>
+                    <input id="observacao" type="text" class="campo form-control" placeholder="Observação"
+                           aria-label="Observação"/>
                 </div>
 
                 <div class="form-group" hidden="true">
-                    <input id="odometro" type="number" class="campo form-control" placeholder="Odometro" aria-label="Odometro"
+                    <input id="odometro" type="number" class="campo form-control" placeholder="Odometro"
+                           aria-label="Odometro"
                            min="0" maxlength="7" pattern="[0-9]*"/>
                 </div>
 
@@ -73,31 +69,20 @@
             </div>
         </div>
     </div>
-    <!--
-    -->
 </div>
 
 <script id="valores-template" type="text/template">
     {{#.}}
     <div class="form-group">
         <div class="input-group mb-3">
-            <!--
-            aria-describedby="basic-addon2
-            -->
-
-            <input type="number" class="valor form-control" placeholder="Valor" aria-label="Valor" min="0" maxlength="10" pattern="[0-9]*"
-                   value="{{valor}}" data-usuario-id="{{id}}"  aria-describedby="basic-{{id}}-addon2"/>
+            <input type="number" class="valor form-control" placeholder="Valor" aria-label="Valor" min="0"
+                   maxlength="10" pattern="[0-9]*" value="{{valor}}" data-usuario-id="{{id}}"
+                   aria-describedby="{{id}}-addon2"/>
 
             <div class="input-group-append">
-                <span class="input-group-text" id="basic-{{id}}-addon2">{{nome}}</span>
+                <span class="input-group-text" id="{{id}}-addon2">{{nome}}</span>
             </div>
-
         </div>
-
-        <!--
-        <input type="number" class="valor form-control" placeholder="{{nome}}" min="0" maxlength="10" pattern="[0-9]*"
-               value="{{valor}}" data-usuario-id="{{id}}"/>
-               -->
     </div>
     {{/.}}
 </script>
