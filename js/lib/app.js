@@ -8,7 +8,7 @@ var App = {
     },
 
     authToken: function () {
-        return "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZWE4ZGMxNC0zZmJmLTQyOGUtODgxMi05NjY5NGEwMzFkZjMiLCJuYW1lIjoiQ2xldmVyc29uIiwiaXNzIjoiaHR0cDovL3Rlc3RlIiwiZXhwIjoxNTI0ODcxNDU0LCJpYXQiOjE1MjM1NzUxMzN9.RCk6ppTsXF40btts7qXUphmqutB6VC7ibDN0bDuCpwYSbqfvXtihQHy4htJ_NQAZocFdGOJ3x9Zew2TGk0PTYQ";
+        return "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZWE4ZGMxNC0zZmJmLTQyOGUtODgxMi05NjY5NGEwMzFkZjMiLCJuYW1lIjoiQ2xldmVyc29uIiwiaXNzIjoiaHR0cDovL3Rlc3RlIiwiZXhwIjoxNTI2MzUzMjAwLCJpYXQiOjE1MjQ5OTY3ODN9.076zY3HlK5m3TLGbplQxV5p90D_ntg2MiCWXKAed0YrKlnIq76ruEBkkpRLZvOu_H-_z5uuAUe7DCPHssO8k7g";
     }
 };
 
