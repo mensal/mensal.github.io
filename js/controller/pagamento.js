@@ -34,7 +34,7 @@ $(function () {
             return this.value;
         });
 
-        if (preenchidos.length == 0 && saldo && dados) {
+        if (preenchidos.length == 0 && dados) {
             $(this).val(dados - saldo);
         }
     });
