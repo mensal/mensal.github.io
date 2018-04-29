@@ -14,8 +14,6 @@ $(function () {
 
     preencherDias();
 
-    // $('#x-params').text(JSON.stringify(params, null, '\t'));
-
     if (isNovo()) {
         prepararNovo();
     } else {
@@ -25,6 +23,16 @@ $(function () {
     $('.campo').each(function (i, v) {
         if (Grupos.atual().campos[v.id]) {
             $(v).parent().attr('hidden', false);
+        }
+    });
+
+    $('#valores').on('focusin', '.valor', function () {
+        var saldo = $('#valores').data('saldo');
+        var dados = $('#tipos').find(":selected").data('dados');
+
+        if (saldo && dados) {
+            $(this).val(dados - saldo);
+            $('#valores').data('saldo', null);
         }
     });
 
@@ -55,7 +63,6 @@ function isNovo() {
 }
 
 function prepararNovo() {
-    // $('#data').val(moment().format('YYYY-MM-DD'));
     $('#data').val(moment().format('D'));
 
     $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
@@ -68,7 +75,12 @@ function prepararNovo() {
         obterUsuariosOk(_data);
     });
 
-    // $('#x-pagamento').text("Novo registro");
+    if (Grupos.atual().nome == 'diaristas') {
+        PagamentoProxy.saldo(params.grupo, params.ano, params.mes).done(function (data) {
+            $('#valores').data('saldo', data);
+            console.log($('#valores').data('saldo'));
+        });
+    }
 }
 
 function prepararEdicao() {
@@ -191,5 +203,5 @@ function criarOption(tipo, selected) {
         text: Grupos.atual().tipoDescricao(tipo),
         selected: selected,
         disabled: !Grupos.atual().dinamico && !selected
-    });
+    }).data('dados', Grupos.atual().tipoData(tipo));
 }

@@ -7,6 +7,9 @@ var Grupos = {
         tipoDescricao: function (tipo) {
             return tipo.nome;
         },
+        tipoData: function (tipo) {
+            return null;
+        },
         pagamentoDescricao: function (pagamento) {
             return this.tipoDescricao(pagamento.tipo);
         }
@@ -21,6 +24,9 @@ var Grupos = {
         tipoDescricao: function (tipo) {
             return tipo.nome;
         },
+        tipoData: function (tipo) {
+            return null;
+        },
         pagamentoDescricao: function (pagamento) {
             return this.tipoDescricao(pagamento.tipo) + (pagamento.observacao ? ': ' + pagamento.observacao.toLowerCase() : '');
         }
@@ -32,6 +38,9 @@ var Grupos = {
         campos: {},
         tipoDescricao: function (tipo) {
             return 'R$ ' + numeral(tipo.valor).format().replace('.', ',');
+        },
+        tipoData: function (tipo) {
+            return tipo.valor;
         },
         pagamentoDescricao: function (pagamento) {
             return moment(pagamento.data).format('dddd');
@@ -47,6 +56,9 @@ var Grupos = {
         },
         tipoDescricao: function (tipo) {
             return tipo.veiculo;
+        },
+        tipoData: function (tipo) {
+            return null;
         },
         pagamentoDescricao: function (pagamento) {
             return this.tipoDescricao(pagamento.tipo);

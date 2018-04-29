@@ -49,5 +49,18 @@ var PagamentoProxy = {
             url: this.url + grupo + '/' + id,
             headers: {Authorization: App.authToken(), "If-Unmodified-Since": versao}
         });
+    },
+
+    saldo: function (grupo, ano, mes) {
+        return $.ajax({
+            type: "GET",
+            grupo: grupo,
+            data: {
+                ano: ano,
+                mes: mes
+            },
+            url: this.url + grupo + '/saldo',
+            headers: {Authorization: App.authToken()}
+        });
     }
 };
