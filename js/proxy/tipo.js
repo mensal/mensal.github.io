@@ -10,7 +10,7 @@ var TipoProxy = {
                 ano: ano,
                 mes: mes
             },
-            url: this.url + grupo,
+            url: this.url + grupo + '?ano=' + ano + '&mes=' + mes,
             headers: {
                 Authorization: App.authToken()
             }

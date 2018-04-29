@@ -17,25 +17,9 @@ $(function () {
     // $('#x-params').text(JSON.stringify(params, null, '\t'));
 
     if (isNovo()) {
-        // $('#data').val(moment().format('YYYY-MM-DD'));
-        $('#data').val(moment().format('D'));
-
-        $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
-
-        TipoProxy.todos(params.grupo).done(function (data) {
-            obterTiposOk(data, params.tipoId);
-        });
-
-        UsuarioProxy.todos().done(function (_data) {
-            obterUsuariosOk(_data);
-        });
-
-        // $('#x-pagamento').text("Novo registro");
+        prepararNovo();
     } else {
-        $('#salvar').parent().removeClass('col-12').addClass('col-6');
-        $('#excluir').parent().attr('hidden', false);
-
-        PagamentoProxy.obter(params.grupo, params.pagamentoId).done(obterPagamentoOk);
+        prepararEdicao()
     }
 
     $('.campo').each(function (i, v) {
@@ -52,12 +36,14 @@ $(function () {
 
 function preencherDias(data) {
     var dias = new Date(params.ano, params.mes - 1, 0).getDate();
+    var texto;
 
-    for (var dia = dias; dia > 0; dia--) {
-        var texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes - 1, dia)).format('dddd').toLowerCase();
-
+    for (var dia = 1; dia < dias; dia++) {
         if (dia == new Date().getDate()) {
-            texto += ' (hoje)';
+            texto = 'Hoje';
+        } else {
+            texto = dia + ' ' + moment(new Date(params.ano, params.mes - 1, dia)).format('ddd').toLowerCase();
+            // texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes - 1, dia)).format('dddd').toLowerCase();
         }
 
         $('#data').append(new Option(texto, dia));
@@ -66,6 +52,30 @@ function preencherDias(data) {
 
 function isNovo() {
     return App.getParam('pagamento_id') == null;
+}
+
+function prepararNovo() {
+    // $('#data').val(moment().format('YYYY-MM-DD'));
+    $('#data').val(moment().format('D'));
+
+    $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
+
+    TipoProxy.todos(params.grupo, params.ano, params.mes).done(function (data) {
+        obterTiposOk(data, params.tipoId);
+    });
+
+    UsuarioProxy.todos().done(function (_data) {
+        obterUsuariosOk(_data);
+    });
+
+    // $('#x-pagamento').text("Novo registro");
+}
+
+function prepararEdicao() {
+    $('#salvar').parent().removeClass('col-12').addClass('col-6');
+    $('#excluir').parent().attr('hidden', false);
+
+    PagamentoProxy.obter(params.grupo, params.pagamentoId).done(obterPagamentoOk);
 }
 
 function excluir(event) {
