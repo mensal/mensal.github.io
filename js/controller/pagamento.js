@@ -30,9 +30,12 @@ $(function () {
         var saldo = $('#valores').data('saldo');
         var dados = $('#tipos').find(":selected").data('dados');
 
-        if (saldo && dados) {
+        var preenchidos = $('.valor').filter(function () {
+            return this.value;
+        });
+
+        if (preenchidos.length == 0 && saldo && dados) {
             $(this).val(dados - saldo);
-            $('#valores').data('saldo', null);
         }
     });
 
