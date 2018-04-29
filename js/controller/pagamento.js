@@ -34,7 +34,7 @@ $(function () {
     $('#excluir').click(excluir);
 });
 
-function preencherDias(data) {
+function preencherDias() {
     var dias = new Date(params.ano, params.mes - 1, 0).getDate();
     var texto;
 
@@ -142,7 +142,7 @@ function obterPagamentoOk(data, status, xhr) {
     $('#odometro').val(data.odometro);
     $('#litros').val(data.litros);
 
-    TipoProxy.todos(params.grupo).done(function (_data) {
+    TipoProxy.todos(params.grupo, params.ano, params.mes).done(function (_data) {
         obterTiposOk(_data, data.tipo.id);
     });
 
