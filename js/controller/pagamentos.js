@@ -8,7 +8,12 @@ $(function () {
         mes: App.getParam('mes')
     };
 
-    $('#titulo').html(params.ano + '/' + params.mes);
+    $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
+
+    $('#periodo').change(function () {
+        var periodo = $(this).val().split('-')
+        document.location = 'pagamentos?ano=' + periodo[0] + '&mes=' + periodo[1];
+    });
 
     TipoProxy.todos('fixas', params.ano, params.mes).done(tipoFixasOk);
 
