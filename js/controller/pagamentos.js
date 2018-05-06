@@ -8,10 +8,12 @@ $(function () {
         mes: App.getParam('mes')
     };
 
+    redirecionaParaDataCorreta();
+
     $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
 
     $('#periodo').change(function () {
-        var periodo = $(this).val().split('-')
+        var periodo = $(this).val().split('-');
         document.location = 'pagamentos?ano=' + periodo[0] + '&mes=' + periodo[1];
     });
 
@@ -43,6 +45,17 @@ $(function () {
         document.location = url;
     });
 });
+
+function redirecionaParaDataCorreta() {
+    var mesCorrente = moment().format('MM');
+    var anoCorrente = moment().format('YYYY');
+
+    if (mesCorrente != params.mes || anoCorrente != params.ano) {
+        if (confirm('Redirecionando para o mês atual, ' + moment().format('MMMM') + ' de ' + moment().format('YYYY') + '.')) {
+            document.location = "pagamentos?ano=" + anoCorrente + "&mes=" + mesCorrente;
+        }
+    }
+}
 
 function tipoFixasOk(data) {
     $(data).each(function (i, v) {
