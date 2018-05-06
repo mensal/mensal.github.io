@@ -196,7 +196,7 @@ function obterUsuariosOk(data, valores) {
 
 function aplicarMascaras() {
     $('#odometro').mask('000000', {reverse: true, selectOnFocus: true});
-    $('#litros').mask('000.00', {reverse: true, selectOnFocus: true});
+    $('#litros').mask('000.000', {reverse: true, selectOnFocus: true});
     $('input.valor').mask('000000.00', {reverse: true, selectOnFocus: true});
 }
 
