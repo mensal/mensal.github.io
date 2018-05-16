@@ -7,9 +7,38 @@ var App = {
         return new URL(document.location).searchParams.get(name)
     },
 
-    authToken: function () {
-        return "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZWE4ZGMxNC0zZmJmLTQyOGUtODgxMi05NjY5NGEwMzFkZjMiLCJuYW1lIjoiQ2xldmVyc29uIiwiaXNzIjoiaHR0cDovL3Rlc3RlIiwiZXhwIjoxNTI2MzUzMjAwLCJpYXQiOjE1MjQ5OTY3ODN9.076zY3HlK5m3TLGbplQxV5p90D_ntg2MiCWXKAed0YrKlnIq76ruEBkkpRLZvOu_H-_z5uuAUe7DCPHssO8k7g";
+    setAuthToken: function (token) {
+        localStorage.setItem("token", token);
+    },
+
+    getAuthToken: function () {
+        return "Bearer " + localStorage.getItem("token");
+    },
+    
+    tratar401: function (xhr) {
+        document.location = "login";
+    },
+
+    tratar422: function (xhr) {
+        var text = JSON.stringify(xhr.responseJSON, null, '\t');
+
+        alert(text ? text : xhr.responseText);
     }
 };
 
 var params;
+
+$.ajaxSetup({
+    error: function (xhr) {
+        switch (xhr.status) {
+            case 401:
+                App.tratar401(xhr);
+                break;
+
+            case 400:
+            case 422:
+                App.tratar422(xhr);
+                break;
+        }
+    }
+});

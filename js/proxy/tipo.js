@@ -12,7 +12,7 @@ var TipoProxy = {
             },
             url: this.url + grupo,
             headers: {
-                Authorization: App.authToken()
+                Authorization: App.getAuthToken()
             }
         });
     },

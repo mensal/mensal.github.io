@@ -8,7 +8,7 @@ var PagamentoProxy = {
             url: this.url + grupo,
             data: JSON.stringify(data),
             contentType: "application/json",
-            headers: {Authorization: App.authToken()}
+            headers: {Authorization: App.getAuthToken()}
         });
     },
 
@@ -21,7 +21,7 @@ var PagamentoProxy = {
                 mes: mes
             },
             url: this.url + grupo,
-            headers: {Authorization: App.authToken()}
+            headers: {Authorization: App.getAuthToken()}
         });
     },
 
@@ -29,7 +29,7 @@ var PagamentoProxy = {
         return $.ajax({
             type: "GET",
             url: this.url + grupo + '/' + id,
-            headers: {Authorization: App.authToken()}
+            headers: {Authorization: App.getAuthToken()}
         });
     },
 
@@ -39,7 +39,7 @@ var PagamentoProxy = {
             url: this.url + grupo + '/' + id,
             data: JSON.stringify(data),
             contentType: "application/json",
-            headers: {Authorization: App.authToken(), "If-Unmodified-Since": versao}
+            headers: {Authorization: App.getAuthToken(), "If-Unmodified-Since": versao}
         });
     },
 
@@ -47,7 +47,7 @@ var PagamentoProxy = {
         return $.ajax({
             type: "DELETE",
             url: this.url + grupo + '/' + id,
-            headers: {Authorization: App.authToken(), "If-Unmodified-Since": versao}
+            headers: {Authorization: App.getAuthToken(), "If-Unmodified-Since": versao}
         });
     },
 
@@ -60,7 +60,7 @@ var PagamentoProxy = {
                 mes: mes
             },
             url: this.url + grupo + '/saldo',
-            headers: {Authorization: App.authToken()}
+            headers: {Authorization: App.getAuthToken()}
         });
     }
 };

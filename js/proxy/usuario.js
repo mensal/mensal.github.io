@@ -7,7 +7,7 @@ var UsuarioProxy = {
             type: "GET",
             url: this.url,
             headers: {
-                Authorization: App.authToken()
+                Authorization: App.getAuthToken()
             }
         });
     }
