@@ -7,6 +7,18 @@ var App = {
         return new URL(document.location).searchParams.get(name)
     },
 
+    anoCorrente: function() {
+        return moment().format('YYYY');
+    },
+
+    mesCorrente: function() {
+        return moment().format('MM');
+    },
+
+    isMesCorrente: function() {
+        return App.mesCorrente() == params.mes && App.anoCorrente() == params.ano
+    },
+
     setAuthToken: function (token) {
         localStorage.setItem("token", token);
     },

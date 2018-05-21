@@ -47,12 +47,9 @@ $(function () {
 });
 
 function redirecionaParaDataCorreta() {
-    var mesCorrente = moment().format('MM');
-    var anoCorrente = moment().format('YYYY');
-
-    if (mesCorrente != params.mes || anoCorrente != params.ano) {
+    if (!App.isMesCorrente()) {
         if (confirm('Redirecionando para o mês atual, ' + moment().format('MMMM') + ' de ' + moment().format('YYYY') + '.')) {
-            document.location = "pagamentos?ano=" + anoCorrente + "&mes=" + mesCorrente;
+            document.location = "pagamentos?ano=" + App.anoCorrente() + "&mes=" + App.mesCorrente();
         }
     }
 }

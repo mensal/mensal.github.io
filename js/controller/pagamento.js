@@ -46,15 +46,15 @@ $(function () {
 });
 
 function preencherDias() {
-    var dias = new Date(params.ano, params.mes - 1, 0).getDate();
+    var agora = new Date();
+    var dias = new Date(params.ano, params.mes, 0).getDate();
     var texto;
 
-    for (var dia = 1; dia < dias; dia++) {
-        if (dia == new Date().getDate()) {
+    for (var dia = 1; dia <= dias; dia++) {
+        if (dia == agora.getDate() && App.isMesCorrente()) {
             texto = 'Hoje';
         } else {
             texto = dia + ' ' + moment(new Date(params.ano, params.mes - 1, dia)).format('ddd').toLowerCase();
-            // texto = 'Dia ' + dia + ', ' + moment(new Date(params.ano, params.mes - 1, dia)).format('dddd').toLowerCase();
         }
 
         $('#data').append(new Option(texto, dia));
@@ -66,7 +66,10 @@ function isNovo() {
 }
 
 function prepararNovo() {
-    $('#data').val(moment().format('D'));
+
+    if (App.isMesCorrente()) {
+        $('#data').val(moment().format('D'));
+    }
 
     $('#tipos').append($('<option>', {text: Grupos.atual().selecao, selected: true, disabled: true}));
 
