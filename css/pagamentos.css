@@ -5,3 +5,15 @@
 .table thead th {
     font-size: 1.3em;
 }
+
+.lancamento-click td:nth-child(1) {
+    width: 10%;
+}
+
+.lancamento-click td:nth-child(2) {
+    width: 80%;
+}
+
+.lancamento-click td:nth-child(3) {
+    width: 10%;
+}
