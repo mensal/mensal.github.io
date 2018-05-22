@@ -66,7 +66,6 @@ function isNovo() {
 }
 
 function prepararNovo() {
-
     if (App.isMesCorrente()) {
         $('#data').val(moment().format('D'));
     }
