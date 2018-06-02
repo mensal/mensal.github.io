@@ -33,6 +33,14 @@
     </div>
     <div class="row">
         <div class="col-sm offset-md-3 col-md-6">
+            <table id="resumo" class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">Resumo</th>
+                </tr>
+                </thead>
+                <tbody/>
+            </table>
             <table id="fixas" class="table table-hover">
                 <thead>
                 <tr>
@@ -84,6 +92,20 @@
         </div>
     </div>
 </div>
+
+<script id="resumo-template" type="text/template">
+    {{#.}}
+    <tr>
+        <td colspan="2">{{usuario.nome}}</td>
+        <td class="valor text-right">{{total}}</td>
+    </tr>
+    {{/.}}
+    {{^.}}
+    <tr>
+        <td colspan="3">Nenhum pagamento efetuado</td>
+    </tr>
+    {{/.}}
+</script>
 
 <script id="lancamentos-template" type="text/template">
     {{#.}}

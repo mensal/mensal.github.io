@@ -17,6 +17,8 @@ $(function () {
         document.location = 'pagamentos?ano=' + periodo[0] + '&mes=' + periodo[1];
     });
 
+    PagamentoProxy.resumo(params.ano, params.mes).done(resumoOk);
+
     TipoProxy.todos('fixas', params.ano, params.mes).done(tipoFixasOk);
 
     for (var grupo in Grupos) {
@@ -52,6 +54,14 @@ function redirecionaParaDataCorreta() {
             document.location = "pagamentos?ano=" + App.anoCorrente() + "&mes=" + App.mesCorrente();
         }
     }
+}
+
+function resumoOk(data) {
+    $(data).each(function (i, v) {
+        v.total = numeral(v.atual + v.anterior).format();
+    });
+
+    $('#resumo').find('tbody').html(Mustache.render($('#resumo-template').html(), data));
 }
 
 function tipoFixasOk(data) {
