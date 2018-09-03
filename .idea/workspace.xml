@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/pagamentos.html" />
+    <bookmark url="file://$PROJECT_DIR$/js/lib" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="085af99b-3b25-4923-9f21-f453e341b506" name="Default" comment="Novos meses no combo" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="582013015">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+          <entry key="js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="45" />
+          <entry key="PLAIN_TEXT" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="45" />
+          <entry key="txt" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pagamentos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bloqu</find>
+      <find>grupos</find>
+      <find>mome</find>
+      <find>append</find>
+      <find>log</find>
+      <find>x-</find>
+      <find>escon</find>
+      <find>hidd</find>
+      <find>console.log</find>
+      <find>obterPagamentoOk</find>
+      <find>fixas</find>
+      <find>tipo</find>
+      <find>seleca</find>
+      <find>criarOption</find>
+      <find>selecao</find>
+      <find>Selecione</find>
+      <find>locale</find>
+      <find>numeral</find>
+      <find>.</find>
+      <find>campoDescricao</find>
+      <find>moment</find>
+      <find>replace</find>
+      <find>preencherDias</find>
+      <find>TipoProxy</find>
+      <find>.valor</find>
+      <find>tipoDescricao</find>
+      <find>confirm</find>
+      <find>loca</find>
+      <find>stringify</find>
+      <find>xhr</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>grupo</replace>
+      <replace>Escolha</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/x.html" />
+        <option value="$PROJECT_DIR$/js/lib/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/js/proxy/tipo-diversas.js" />
+        <option value="$PROJECT_DIR$/js/proxy/tipo-fixas.js" />
+        <option value="$PROJECT_DIR$/js/proxy/pagamento-diversas.js" />
+        <option value="$PROJECT_DIR$/js/proxy/pagamento-fixas.js" />
+        <option value="$PROJECT_DIR$/css/lancamentos.css" />
+        <option value="$PROJECT_DIR$/lancamento.html" />
+        <option value="$PROJECT_DIR$/js/controller/lancamento.js" />
+        <option value="$PROJECT_DIR$/js/controller/lancamentos.js" />
+        <option value="$PROJECT_DIR$/lancamentos.html" />
+        <option value="$PROJECT_DIR$/js/controller/index.js" />
+        <option value="$PROJECT_DIR$/js/proxy/usuario.js" />
+        <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/css/pagamento.css" />
+        <option value="$PROJECT_DIR$/css/pagamentos.css" />
+        <option value="$PROJECT_DIR$/pagamento.html" />
+        <option value="$PROJECT_DIR$/js/proxy/tipo.js" />
+        <option value="$PROJECT_DIR$/js/controller/grupos.js" />
+        <option value="$PROJECT_DIR$/js/controller/pagamento.js" />
+        <option value="$PROJECT_DIR$/css/login.css" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/js/proxy/autenticacao.js" />
+        <option value="$PROJECT_DIR$/js/controller/login.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/proxy/pagamento.js" />
+        <option value="$PROJECT_DIR$/js/controller/pagamentos.js" />
+        <option value="$PROJECT_DIR$/js/lib/app.js" />
+        <option value="$PROJECT_DIR$/pagamentos.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mensal.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mensal.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mensal.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mensal.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mensal.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mensal.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mensal.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mensal.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="app.js&#9;FILE&#9;file:///Users/zyc/Workspace/mensal/mensal.github.io/js/lib/app.js&#10;app&#9;FILE&#9;file:///Users/zyc/Workspace/mensal/mensal.github.io/js/lib/app.js&#10;app.&#9;FILE&#9;file:///Users/zyc/Workspace/mensal/mensal.github.io/js/lib/app.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535842255721" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/proxy" />
+      <recent name="$PROJECT_DIR$/js/controller" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="4" Folder0="$PROJECT_DIR$/../../pt-BR.dic" Folder1="$PROJECT_DIR$/../../pt-BR.dic" Folder2="$PROJECT_DIR$/../../pt-BR.dic" Folder3="$PROJECT_DIR$/../../pt-BR.dic" CustomDictionaries="4" CustomDictionary0="$PROJECT_DIR$/../../pt-BR.dic/portuguese-brazil_technical-terms.dic" CustomDictionary1="$PROJECT_DIR$/../../pt-BR.dic/portuguese-brazil_without-accents.dic" CustomDictionary2="$PROJECT_DIR$/../../pt-BR.dic/portuguese-brazil_technical-terms_without-accents.dic" CustomDictionary3="$PROJECT_DIR$/../../pt-BR.dic/portuguese-brazil.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="085af99b-3b25-4923-9f21-f453e341b506" name="Default" comment="" />
+      <created>1523565039637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523565039637</updated>
+      <workItem from="1523565041222" duration="6783000" />
+      <workItem from="1523612849669" duration="12379000" />
+      <workItem from="1523656375407" duration="5378000" />
+      <workItem from="1523725573414" duration="576000" />
+      <workItem from="1523732271309" duration="110000" />
+      <workItem from="1523732970341" duration="5985000" />
+      <workItem from="1523966212400" duration="18469000" />
+      <workItem from="1524055605683" duration="17505000" />
+      <workItem from="1524091583362" duration="565000" />
+      <workItem from="1524092708673" duration="6508000" />
+      <workItem from="1524961009595" duration="231000" />
+      <workItem from="1524996511238" duration="6821000" />
+      <workItem from="1525480627881" duration="11000" />
+      <workItem from="1525639704015" duration="2418000" />
+      <workItem from="1526510987082" duration="19000" />
+      <workItem from="1526511053468" duration="2930000" />
+      <workItem from="1526935649914" duration="518000" />
+      <workItem from="1526942562122" duration="1645000" />
+      <workItem from="1527154026769" duration="14000" />
+      <workItem from="1527154082192" duration="8000" />
+      <workItem from="1527900211252" duration="938000" />
+      <workItem from="1528060739890" duration="182000" />
+      <workItem from="1528451548052" duration="517000" />
+      <workItem from="1528817939822" duration="407000" />
+      <workItem from="1528848328058" duration="67000" />
+      <workItem from="1528889697546" duration="600000" />
+      <workItem from="1528991471453" duration="597000" />
+      <workItem from="1528996902816" duration="243000" />
+      <workItem from="1529094426121" duration="1498000" />
+      <workItem from="1530197180134" duration="742000" />
+      <workItem from="1530222813339" duration="1308000" />
+      <workItem from="1530228678080" duration="5000" />
+      <workItem from="1530314634842" duration="530000" />
+      <workItem from="1530548532332" duration="941000" />
+      <workItem from="1530575619914" duration="447000" />
+      <workItem from="1532131682170" duration="72000" />
+      <workItem from="1532131800579" duration="32000" />
+      <workItem from="1532297069429" duration="464000" />
+      <workItem from="1532300255350" duration="2723000" />
+      <workItem from="1532598857742" duration="74000" />
+      <workItem from="1532598998174" duration="171000" />
+      <workItem from="1532891156904" duration="27000" />
+      <workItem from="1533034733242" duration="8000" />
+      <workItem from="1534807467294" duration="645000" />
+      <workItem from="1535833293461" duration="674000" />
+    </task>
+    <task id="LOCAL-00003" summary="Colocando ícones">
+      <created>1523582011502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523582011502</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Colocando ícones">
+      <created>1523582255026</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523582255026</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Colocando ícones">
+      <created>1523582301516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523582301516</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Iniciando o protótipo de telas">
+      <created>1523614081251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523614081251</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Formatação de código">
+      <created>1523624145670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523624145670</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Atualizando...">
+      <created>1523630331417</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523630331417</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Trabalhando no carregamento das despesas fixas">
+      <created>1523635524800</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523635524800</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Continuando com as despesas diversas">
+      <created>1523640307619</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523640307619</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Continuando com as despesas diversas">
+      <created>1523640990091</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523640990091</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Continuando com as despesas diversas">
+      <created>1523641148389</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523641148389</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Experimento o botão de adição">
+      <created>1523658137485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523658137485</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Experimento o botão de adição">
+      <created>1523660812436</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523660812436</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Experimento o botão de adição">
+      <created>1523661927919</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1523661927919</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Experimento o botão de adição">
+      <created>1523662108148</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1523662108148</updated>
+    </task>
+    <task id="LOCAL-00017" summary="montando a url da tela seguinte">
+      <created>1523723978997</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1523723978997</updated>
+    </task>
+    <task id="LOCAL-00018" summary="renomeando as páginas">
+      <created>1523726141048</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1523726141049</updated>
+    </task>
+    <task id="LOCAL-00019" summary="passando os parâmetros">
+      <created>1523735258292</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1523735258292</updated>
+    </task>
+    <task id="LOCAL-00020" summary="colocando os demais grupos na tela">
+      <created>1523750822846</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1523750822846</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Carregando o registro para edição">
+      <created>1523997508406</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1523997508406</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Removendo campos desnecessários">
+      <created>1523997749034</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1523997749034</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Ajuste no botão">
+      <created>1523998113277</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1523998113277</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Ajuste no botão">
+      <created>1523998205114</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1523998205114</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Ajuste no botão">
+      <created>1523999608401</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1523999608401</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Ajuste no botão">
+      <created>1523999802132</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1523999802132</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Incluindo a data">
+      <created>1524000047074</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1524000047074</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Placeholder na data">
+      <created>1524000237482</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1524000237482</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Adicionando as máscaras de número">
+      <created>1524010772863</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1524010772864</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Exibindo os valores pagos pelos usuários">
+      <created>1524059815382</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1524059815382</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Exibindo apenas os campos de cada grupo">
+      <created>1524061795731</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1524061795731</updated>
+    </task>
+    <task id="LOCAL-00032" summary="CRUD porcamente funcionando">
+      <created>1524073287633</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1524073287633</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Corrigindo um pequeno bug">
+      <created>1524075879925</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1524075879925</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Passando o ano e mes para os servicos">
+      <created>1524096351062</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1524096351062</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Melhorando os nomes">
+      <created>1524097384816</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1524097384816</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Usando  o moments com locale">
+      <created>1524099470995</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1524099470995</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Melhoria nas descrições">
+      <created>1524099980061</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1524099980061</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Atualizando o token">
+      <created>1524996942133</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1524996942133</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ajuste no combo de datas">
+      <created>1525036590143</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1525036590143</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Ajuste no combo de tipos">
+      <created>1525036782924</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1525036782924</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Preenchimento com a diária devida automaticamente">
+      <created>1525040420807</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1525040420807</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Preenchimento com a diária devida automaticamente">
+      <created>1525040971146</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1525040971146</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Preenchimento com a diária devida automaticamente">
+      <created>1525041454853</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1525041454853</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Correção dos dígitos dos litros">
+      <created>1525643375950</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1525643375950</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Redirecionando para o mês atual">
+      <created>1525644843706</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1525644843706</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Efetuando login">
+      <created>1526514103508</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1526514103508</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Mostrando o resumo (totalizador)">
+      <created>1527901091294</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1527901091294</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Atualizando o combo de datas">
+      <created>1528060825160</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1528060825160</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Atualizando o base url da API">
+      <created>1530227203147</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1530227203148</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Atualizando o base url da API">
+      <created>1530314657866</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1530314657867</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Novos meses no combo">
+      <created>1535841618880</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1535841618881</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="102785000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18097281" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32889965" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32889965" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.25939393" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" x="100" y="100" width="1240" height="700" id="Documentation" order="9" type="FLOATING" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Carregando o registro para edição" />
+    <MESSAGE value="Removendo campos desnecessários" />
+    <MESSAGE value="Ajuste no botão" />
+    <MESSAGE value="Incluindo a data" />
+    <MESSAGE value="Placeholder na data" />
+    <MESSAGE value="Adicionando as máscaras de número" />
+    <MESSAGE value="Exibindo os valores pagos pelos usuários" />
+    <MESSAGE value="Exibindo apenas os campos de cada grupo" />
+    <MESSAGE value="CRUD porcamente funcionando" />
+    <MESSAGE value="Corrigindo um pequeno bug" />
+    <MESSAGE value="Passando o ano e mes para os servicos" />
+    <MESSAGE value="Melhorando os nomes" />
+    <MESSAGE value="Usando  o moments com locale" />
+    <MESSAGE value="Melhoria nas descrições" />
+    <MESSAGE value="Atualizando o token" />
+    <MESSAGE value="Ajuste no combo de datas" />
+    <MESSAGE value="Ajuste no combo de tipos" />
+    <MESSAGE value="Preenchimento com a diária devida automaticamente" />
+    <MESSAGE value="Correção dos dígitos dos litros" />
+    <MESSAGE value="Redirecionando para o mês atual" />
+    <MESSAGE value="Efetuando login" />
+    <MESSAGE value="Mostrando o resumo (totalizador)" />
+    <MESSAGE value="Atualizando o combo de datas" />
+    <MESSAGE value="Atualizando o base url da API" />
+    <MESSAGE value="Novos meses no combo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Novos meses no combo" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.min.js.map" />
+    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.bundle.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.bundle.min.js.map" />
+    <entry file="file://$PROJECT_DIR$/css/material-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery-3.3.1.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery-3.3.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5310">
+          <caret line="1" column="46976" selection-start-line="1" selection-start-column="46972" selection-end-line="1" selection-end-column="46976" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proxy/pagamento-diversas.js" />
+    <entry file="file://$PROJECT_DIR$/js/proxy/tipo-diversas.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales/bg.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales/be-nl.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales/pt-br.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales/pt-br.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/locales.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery-ui.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery-ui.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/lib/mustache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="463" column="2" selection-start-line="463" selection-start-column="2" selection-end-line="463" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14281" column="10" selection-start-line="14281" selection-start-column="10" selection-end-line="14281" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="3129" column="14" selection-start-line="3129" selection-start-column="14" selection-end-line="3129" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="3297" column="4" selection-start-line="3297" selection-start-column="4" selection-end-line="3297" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery.mask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="108" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/numeral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="420" column="4" selection-start-line="420" selection-start-column="4" selection-end-line="420" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="131" column="8" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pagamentos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proxy/usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proxy/autenticacao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json" />
+    <entry file="file://$PROJECT_DIR$/x.ts" />
+    <entry file="file://$PROJECT_DIR$/js/controller/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagamento.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proxy/pagamento.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/grupos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/pagamentos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/pagamento.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proxy/tipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagamentos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>io|github|mensal</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
