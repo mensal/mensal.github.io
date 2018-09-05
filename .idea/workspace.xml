@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/lib" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085af99b-3b25-4923-9f21-f453e341b506" name="Default" comment="Novos meses no combo">
+    <list default="true" id="085af99b-3b25-4923-9f21-f453e341b506" name="Default" comment="Correção do domínio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lib/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lib/app.js" afterDir="false" />
     </list>
@@ -59,15 +59,15 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="45" />
-          <entry key="JavaScript" value="24" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JavaScript" value="28" />
+          <entry key="PLAIN_TEXT" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="45" />
-          <entry key="js" value="24" />
-          <entry key="txt" value="22" />
+          <entry key="js" value="28" />
+          <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/js/lib/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -356,14 +356,7 @@
       <workItem from="1533034733242" duration="8000" />
       <workItem from="1534807467294" duration="645000" />
       <workItem from="1535833293461" duration="674000" />
-      <workItem from="1536112842730" duration="23000" />
-    </task>
-    <task id="LOCAL-00003" summary="Colocando ícones">
-      <created>1523582011502</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1523582011502</updated>
+      <workItem from="1536112842730" duration="233000" />
     </task>
     <task id="LOCAL-00004" summary="Colocando ícones">
       <created>1523582255026</created>
@@ -701,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535841618881</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Correção do domínio">
+      <created>1536113036270</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1536113036271</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102808000" />
+    <option name="totallyTimeSpent" value="103018000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -762,7 +762,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Carregando o registro para edição" />
     <MESSAGE value="Removendo campos desnecessários" />
     <MESSAGE value="Ajuste no botão" />
     <MESSAGE value="Incluindo a data" />
@@ -787,7 +786,8 @@
     <MESSAGE value="Atualizando o combo de datas" />
     <MESSAGE value="Atualizando o base url da API" />
     <MESSAGE value="Novos meses no combo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novos meses no combo" />
+    <MESSAGE value="Correção do domínio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção do domínio" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.min.js.map" />
@@ -1000,7 +1000,7 @@
     <entry file="file://$PROJECT_DIR$/js/lib/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>

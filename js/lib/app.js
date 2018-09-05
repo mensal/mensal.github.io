@@ -1,6 +1,6 @@
 var App = {
 
-    contextPath: "mensal.ddns.net:8080",
+    contextPath: "http://mensal.ddns.net:8080",
     // contextPath: "https://wildfly-mensal.a3c1.starter-us-west-1.openshiftapps.com",
     // contextPath: "http://localhost:8080",
 
