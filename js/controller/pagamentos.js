@@ -34,7 +34,7 @@ $(function () {
         var tipoId = $(this).data('tipo-id');
         var pagamentoId = $(this).data('pagamento-id');
 
-        var url = 'pagamento?grupo=' + grupo;
+        var url = 'pagamento.html?grupo=' + grupo;
         url += '&ano=' + params.ano;
         url += '&mes=' + params.mes;
 
