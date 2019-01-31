@@ -16,5 +16,5 @@ $(function () {
 function autenticarOk(data) {
     App.setAuthToken(data);
 
-    document.location = "pagamentos";
+    document.location = "pagamentos.html";
 }

@@ -30,7 +30,7 @@ var App = {
     },
     
     tratar401: function (xhr) {
-        document.location = "login";
+        document.location = "login.html";
     },
 
     tratar422: function (xhr) {

@@ -144,7 +144,7 @@ function montarData() {
 }
 
 function voltar() {
-    document.location = "pagamentos?ano=" + params.ano + "&mes=" + params.mes;
+    document.location = "pagamentos.html?ano=" + params.ano + "&mes=" + params.mes;
 }
 
 function obterPagamentoOk(data, status, xhr) {

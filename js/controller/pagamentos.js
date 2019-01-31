@@ -14,7 +14,7 @@ $(function () {
 
     $('#periodo').change(function () {
         var periodo = $(this).val().split('-');
-        document.location = 'pagamentos?ano=' + periodo[0] + '&mes=' + periodo[1];
+        document.location = 'pagamentos.html?ano=' + periodo[0] + '&mes=' + periodo[1];
     });
 
     PagamentoProxy.resumo(params.ano, params.mes).done(resumoOk);
@@ -51,7 +51,7 @@ $(function () {
 function redirecionaParaDataCorreta() {
     if (!App.isMesCorrente()) {
         if (confirm('Redirecionando para o mês atual, ' + moment().format('MMMM') + ' de ' + moment().format('YYYY') + '.')) {
-            document.location = "pagamentos?ano=" + App.anoCorrente() + "&mes=" + App.mesCorrente();
+            document.location = "pagamentos.html?ano=" + App.anoCorrente() + "&mes=" + App.mesCorrente();
         }
     }
 }
