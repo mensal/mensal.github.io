@@ -21,6 +21,18 @@ var App = {
         return App.mesCorrente() == params.mes && App.anoCorrente() == params.ano
     },
 
+    meses: function() {
+        var inicio = moment('2018-05-01');
+        var fim = moment().startOf('M').add(1, 'M');
+        var resultado = [];
+
+        do {
+            resultado.push(inicio.add(1, 'M').toDate());
+        } while (inicio < fim);
+
+        return resultado;
+    },
+
     setAuthToken: function (token) {
         localStorage.setItem("token", token);
     },

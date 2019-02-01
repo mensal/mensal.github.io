@@ -12,6 +12,10 @@ $(function () {
 
     $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
 
+    App.meses().forEach(function (v) {
+        console.log(moment(v).format('MMM YYYY'));
+    });
+
     $('#periodo').change(function () {
         var periodo = $(this).val().split('-');
         document.location = 'pagamentos.html?ano=' + periodo[0] + '&mes=' + periodo[1];
