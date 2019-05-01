@@ -60,14 +60,14 @@ function redirecionaParaDataCorreta() {
 }
 
 function preencheMeses() {
-    var month = moment('2018-05-01', 'YYYY-MM-DD')
-    var max   = moment().startOf('month').add(2, 'month')
+    var first = moment('2018-05-01', 'YYYY-MM-DD')
+    var month = moment().startOf('month').add(1, 'month')
     
-    while (month <= max) {
+    while (month >= first) {
         var o = new Option(month.format('MMMM YYYY'), month.format('YYYY-MM'));
         $('#periodo').append(o);
         
-        month = month.add(1, 'month')
+        month = month.subtract(1, 'month')
     }
     
     $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
