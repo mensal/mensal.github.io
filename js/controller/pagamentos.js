@@ -9,8 +9,7 @@ $(function () {
     };
 
     redirecionaParaDataCorreta();
-
-    $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
+    preencheMeses();
 
     App.meses().forEach(function (v) {
         console.log(moment(v).format('MMM YYYY'));
@@ -58,6 +57,20 @@ function redirecionaParaDataCorreta() {
             document.location = "pagamentos.html?ano=" + App.anoCorrente() + "&mes=" + App.mesCorrente();
         }
     }
+}
+
+function preencheMeses() {
+    var month = moment('2018-05-01', 'YYYY-MM-DD')
+    var max   = moment().startOf('month').add(2, 'month')
+    
+    while (month <= max) {
+        var o = new Option(month.format('MMMM YYYY'), month.format('YYYY-MM'));
+        $('#periodo').append(o);
+        
+        month = month.add(1, 'month')
+    }
+    
+    $('#periodo').val(params.ano + '-' + numeral(params.mes).format('00'));
 }
 
 function resumoOk(data) {
