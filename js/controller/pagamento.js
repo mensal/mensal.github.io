@@ -50,11 +50,17 @@ $(function () {
 function obterPosicaoGPS() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            params.gps = {
-                latitude:  position.coords.latitude,
-                longitude: position.coords.longitude
-            };
+            var precisao = position.coords.accuracy;
 
+            if (params.gps.precisao == null || params.gps.precisao > precisao) {
+                params.gps = {
+                    latitude:  position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    precisao: precisao
+                };
+            }
+
+            setTimeout(obterPosicaoGPS, 500);
             console.log(position);
         });
     }
