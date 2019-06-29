@@ -2,6 +2,8 @@ $(function () {
     moment.locale('pt-br');
     numeral.defaultFormat('0.00');
 
+    obterPosicaoGPS();
+
     params = {
         ano: App.getParam('ano'),
         mes: App.getParam('mes'),
@@ -44,6 +46,19 @@ $(function () {
     $('#salvar').click(salvar);
     $('#excluir').click(excluir);
 });
+
+function obterPosicaoGPS() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            params.gps = {
+                latitude:  position.coords.latitude,
+                longitude: position.coords.longitude
+            };
+
+            console.log(params.gps);
+        });
+    }
+}
 
 function preencherDias() {
     var agora = new Date();
