@@ -55,7 +55,7 @@ function obterPosicaoGPS() {
                 longitude: position.coords.longitude
             };
 
-            console.log(params.gps);
+            console.log(position);
         });
     }
 }
