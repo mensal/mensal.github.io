@@ -52,7 +52,7 @@ function obterPosicaoGPS() {
         navigator.geolocation.getCurrentPosition(function (position) {
             var precisao = position.coords.accuracy;
 
-            if (params.gps.precisao == null || params.gps.precisao > precisao) {
+            if (params.gps == null || params.gps.precisao > precisao) {
                 params.gps = {
                     latitude:  position.coords.latitude,
                     longitude: position.coords.longitude,
