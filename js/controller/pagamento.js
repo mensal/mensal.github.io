@@ -2,8 +2,6 @@ $(function () {
     moment.locale('pt-br');
     numeral.defaultFormat('0.00');
 
-    obterPosicaoGPS();
-
     params = {
         ano: App.getParam('ano'),
         mes: App.getParam('mes'),
@@ -17,6 +15,7 @@ $(function () {
     preencherDias();
 
     if (isNovo()) {
+        obterPosicaoGPS();
         prepararNovo();
     } else {
         prepararEdicao()
@@ -48,24 +47,22 @@ $(function () {
 });
 
 function obterPosicaoGPS() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var precisao = position.coords.accuracy;
+    var gpsId = navigator.geolocation.watchPosition(function (position) {
+        var precisao = position.coords.accuracy;
 
-            if (params.gps == null || params.gps.precisao > precisao) {
-                params.gps = {
-                    latitude:  position.coords.latitude,
-                    longitude: position.coords.longitude,
-                    precisao: precisao
-                };
+        if (params.gps == null || params.gps.precisao > precisao) {
+            params.gps = {
+                id: gpsId,
+                latitude:  position.coords.latitude,
+                longitude: position.coords.longitude,
+                precisao: precisao,
+            };
 
-                console.log(params.gps);
-            }
+            console.log(params.gps);
+        }
 
-            setTimeout(obterPosicaoGPS, 500);
-            console.log(position.coords);
-        });
-    }
+        console.log(position.coords);
+    });
 }
 
 function preencherDias() {
@@ -146,6 +143,10 @@ function montarData() {
         valores: []
     };
 
+    if (params.gps) {
+        data.coordenada = params.gps
+    }
+
     for (var v in Grupos.atual().campos) {
         data[v] = $('#' + v).val();
     }
@@ -167,6 +168,10 @@ function montarData() {
 }
 
 function voltar() {
+    if (params.gps) {
+        navigator.geolocation.clearWatch(params.gps.id);
+    }
+
     document.location = "pagamentos.html?ano=" + params.ano + "&mes=" + params.mes;
 }
 
