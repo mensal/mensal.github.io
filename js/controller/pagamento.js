@@ -58,6 +58,8 @@ function obterPosicaoGPS() {
                     longitude: position.coords.longitude,
                     precisao: precisao
                 };
+
+                console.log(params.gps);
             }
 
             setTimeout(obterPosicaoGPS, 500);
