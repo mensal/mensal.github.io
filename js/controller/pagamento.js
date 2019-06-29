@@ -144,7 +144,10 @@ function montarData() {
     };
 
     if (params.gps) {
-        data.coordenada = params.gps
+        data.coordenada = {
+            latitude:  params.gps.latitude,
+            longitude: params.gps.longitude
+        }
     }
 
     for (var v in Grupos.atual().campos) {
