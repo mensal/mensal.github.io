@@ -63,7 +63,7 @@ function obterPosicaoGPS() {
             }
 
             setTimeout(obterPosicaoGPS, 500);
-            console.log(position);
+            console.log(position.coords);
         });
     }
 }
