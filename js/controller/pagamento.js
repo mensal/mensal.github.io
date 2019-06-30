@@ -48,20 +48,15 @@ $(function () {
 
 function obterPosicaoGPS() {
     var gpsId = navigator.geolocation.watchPosition(function (position) {
-        var precisao = position.coords.accuracy;
-
-        if (params.gps == null || params.gps.precisao > precisao) {
-            params.gps = {
-                id: gpsId,
+        params.gps = {
+            id : gpsId,
+            coordenada : {
                 latitude:  position.coords.latitude,
-                longitude: position.coords.longitude,
-                precisao: precisao,
-            };
+                longitude: position.coords.longitude
+            }
+        };
 
-            console.log(params.gps);
-        }
-
-        console.log(position.coords);
+        console.log(params.gps.coordenada);
     });
 }
 
@@ -144,10 +139,7 @@ function montarData() {
     };
 
     if (params.gps) {
-        data.coordenada = {
-            latitude:  params.gps.latitude,
-            longitude: params.gps.longitude
-        }
+        data.coordenada = params.gps.coordenada;
     }
 
     for (var v in Grupos.atual().campos) {
