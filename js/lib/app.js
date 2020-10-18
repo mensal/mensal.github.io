@@ -4,7 +4,7 @@ var App = {
     // contextPath: "https://wildfly-mensal.a3c1.starter-us-west-1.openshiftapps.com",
     // contextPath: "http://localhost:8080",
     // contextPath: "https://mensal.ddns.net:4443",
-    contextPath: "https://mensal.duckdns.org:4443",
+    contextPath: "https://mensal.duckdns.org",
 
     getParam: function (name) {
         return new URL(document.location).searchParams.get(name)
